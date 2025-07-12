@@ -1,0 +1,16 @@
+{# 
+    ✅ مكون زر قابل لإعادة الاستخدام
+    🧩 الاستخدام:
+        {% include 'components/buttons/_primary_button.twig' with {
+            'text': 'Save Changes',
+            'href': path('some_route'),
+            'icon': 'save'
+        } %}
+#}
+
+<a href="{{ href }}" class="btn btn-primary d-inline-flex align-items-center">
+    {% if icon %}
+        <i class="bi bi-{{ icon }} me-2"></i>
+    {% endif %}
+    {{ text }}
+</a>

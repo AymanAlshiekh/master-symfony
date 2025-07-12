@@ -1,0 +1,20 @@
+{% extends 'base.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+    <h2 class="mb-4">Login</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" name="_username" id="inputEmail" class="form-control" required autofocus>
+        </div>
+
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" name="_password" id="inputPassword" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <h2 class="mb-4">Register</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" name="email" id="inputEmail" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="inputConfirm" class="form-label">Confirm Password</label>
+            <input type="password" name="confirm_password" id="inputConfirm" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Register</button>
+    </form>
+{% endblock %}
